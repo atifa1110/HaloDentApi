@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Welcome to Firebase Hosting</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  
+  <body>
+    <div id="message">
+      <h2>Welcome</h2>
+      <h1>Firebase Hosting Setup Complete</h1>
+      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to setup hosting by input this data</p>
+    
+      <form method="POST" action="https://halo-dent.web.app/api/send">
+        <div>
+            <label for="token">Token</label>
+            <br><input type="text" required name="token" id="token" placeholder="Input Token"/>
+        </div>
+
+        <div>
+          <label for="token1">Token</label>
+          <br><input type="text" name="token1" id="token1" placeholder="Input Token"/>
+        </div>
+
+        <div>
+          <label for="title">Title</label>
+          <input type="text" name="title" id="title" placeholder="Input Title message"/>
+        </div>
+        
+        <div>
+          <label for="body">Body</label>
+          <input type="text" name="body" id="body" placeholder="Input Message"/>
+        </div>
+        
+        <div>
+          <label for="image">Image</label>
+          <input type="text" name="image" id="image" placeholder="Input Image URL"/>
+        </div>
+
+        <div>
+          <label for="chatid">UserId</label>
+          <input type="text" name="chatid" id="chatid" placeholder="Input User Id"/>
+        </div>
+
+        <div>
+          <button>Send</button>
+        </div>
+        <!-- <p><a href="https://firebase.google.com/docs/hosting/">Send</a></p> -->
+      </form>
+    </div>
+  </body>
+</html>
+
